@@ -6,7 +6,7 @@
 @use "sass:string";
 
 @use "variables" with (
-  $max-content-width: {{ site.max_width | default: "1040px" }}
+  $max-content-width: {{site.max_width | default: "1040px"}}
 );
 
 @use "themes";

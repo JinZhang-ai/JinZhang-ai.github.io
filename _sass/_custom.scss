@@ -154,7 +154,9 @@ footer.fixed-bottom {
   border-radius: 18px;
   background: rgba(255, 252, 244, 0.82);
   box-shadow: 0 8px 24px rgba(104, 82, 42, 0.045);
-  transition: transform 180ms ease, box-shadow 180ms ease;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
 }
 
 .honor-card:hover {
