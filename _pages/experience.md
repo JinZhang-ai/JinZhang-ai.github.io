@@ -3,7 +3,7 @@ layout: page
 title: Experience
 permalink: /experience/
 description: Research experience.
-nav: true
+nav: false
 nav_order: 4
 ---
 

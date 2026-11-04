@@ -3,7 +3,7 @@ layout: page
 title: Honors & Awards
 permalink: /honors/
 description: Selected competition awards.
-nav: true
+nav: false
 nav_order: 5
 ---
 
