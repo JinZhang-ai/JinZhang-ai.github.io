@@ -2,57 +2,54 @@
 layout: about
 title: about
 permalink: /
-subtitle: Undergraduate Researcher at Lanzhou University · Research Intern at MBZUAI
+subtitle: Undergraduate Researcher · Lanzhou University
+
+profile:
+  align: left
+  image: prof_pic.jpg
+  image_circular: false
+  more_info: >
+    <p>Lanzhou, Gansu, China · 20 years old</p>
+    <p><a href="mailto:mjzj35723@gmail.com">mjzj35723@gmail.com</a></p>
+    <p><a href="mailto:zhangjin2024@lzu.edu.cn">zhangjin2024@lzu.edu.cn</a></p>
 
 selected_papers: false
 social: true
 
 announcements:
   enabled: false
-  scrollable: true
+  scrollable: false
   limit: 5
 
 latest_posts:
   enabled: false
-  scrollable: true
+  scrollable: false
   limit: 3
 ---
 
 ## About Me
 
-I am an undergraduate researcher at **Lanzhou University** (2024–2028).
+I am **Jin Zhang (张津)**, an undergraduate student in the **School of Information Science & Engineering at Lanzhou University**, China. My academic interests center on building reliable and capable intelligent systems, with a particular focus on large language models, multimodal learning, and agentic applications.
 
-I am also a **Research Assistant Intern at MBZUAI** (2026–2027).
+I enjoy exploring problems at the intersection of model reasoning, information retrieval, recommendation, and real-world AI systems. My work combines empirical analysis with method development, aiming to understand not only whether an AI system succeeds, but also why it succeeds or fails.
 
-At Lanzhou University, I work with **Prof. Zepeng Li** and **Assoc. Prof. Jishen Dang**.
+## Education & Research Experience
 
-My research focuses on **multimodal recommendation systems** and **knowledge graphs**.
+### Lanzhou University
+**B.Eng. student · School of Information Science & Engineering**  
+2024–2028 · Lanzhou, China
 
-At MBZUAI, I work with **Lijie Hu**, a postdoctoral researcher.
-
-My current topics include **LLM hallucination** and **representation learning**.
+Undergraduate study and research in intelligent information processing, machine learning, and AI systems.
 
 ## Research Interests
 
-- Large Language Model Reasoning
-- LLM Hallucination and Reliability
-- Representation Learning
-- Multimodal Recommendation
-- Knowledge Graphs
+- **LLM Hallucination & Reliability** — understanding, evaluating, and mitigating hallucinations in language and multimodal models.
+- **Multimodal Recommendation** — modeling user preferences and item content across visual, textual, and behavioral signals.
+- **Generative Engine Optimization (GEO)** — studying content visibility, citation, and recommendation in generative search and agent-mediated environments.
+- **Agentic Systems** — improving the reliability, reasoning, memory, and task execution of LLM-based agents.
 
-## Selected Research
+## Selected Research Directions
 
-- **[BRIDGE](/projects/bridge/)** — Steering model-supported reasoning trajectories.
-- **[WitMem](/projects/witmem/)** — Governing reliable long-term agent memory.
-- **[FinMemRec](/projects/finmemrec/)** — Dynamic memory for financial recommendation.
-- **[Agentic Affordance Optimization](/projects/aao/)** — Improving websites for agentic task execution.
-
-## Academic Experience
-
-**Lanzhou University** · 2024–2028  
-Undergraduate Researcher · Multimodal Recommendation · Knowledge Graphs
-
-**MBZUAI** · 2026–2027  
-Research Assistant Intern · LLM Hallucination · Representation Learning
-
-[More about my experience](/experience/) · [Honors & Awards](/honors/)
+- **LLM Reasoning & Steering** — representation-level interventions for more reliable reasoning.
+- **Financial and Multimodal Recommendation** — memory-augmented and content-aware recommendation methods.
+- **Agentic Affordance Optimization** — understanding how websites and interfaces shape agent decisions and task outcomes.
