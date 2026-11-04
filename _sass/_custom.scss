@@ -1,0 +1,153 @@
+/* Jin Zhang — warm ivory / butter-yellow academic theme */
+
+:root {
+  --global-bg-color: #faf6e9;
+  --global-code-bg-color: #f1ead8;
+  --global-text-color: #473d2f;
+  --global-text-color-light: #897b63;
+  --global-theme-color: #ad8338;
+  --global-hover-color: #8f692c;
+  --global-hover-text-color: #fffdf6;
+  --global-footer-bg-color: #eee5d1;
+  --global-footer-text-color: #62553f;
+  --global-footer-link-color: #8f692c;
+  --global-divider-color: rgba(126, 101, 57, 0.18);
+  --global-card-bg-color: rgba(255, 252, 244, 0.92);
+  --global-highlight-color: #956d2b;
+  --global-newsletter-bg-color: #f3ecd9;
+  --global-newsletter-text-color: #473d2f;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--global-text-color);
+  background-color: var(--global-bg-color);
+  background-image:
+    radial-gradient(ellipse at 12% 8%, rgba(255, 251, 229, 0.92), transparent 42%),
+    radial-gradient(ellipse at 88% 28%, rgba(224, 198, 135, 0.16), transparent 38%),
+    repeating-linear-gradient(0deg, rgba(115, 91, 49, 0.012) 0, rgba(115, 91, 49, 0.012) 1px, transparent 1px, transparent 4px),
+    linear-gradient(145deg, #fbf8ee 0%, #f7f0df 58%, #f3ead5 100%);
+  background-attachment: fixed;
+  font-family: Inter, "Segoe UI", sans-serif;
+  letter-spacing: 0.005em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.post-title,
+.navbar-brand {
+  color: #55452d;
+  font-family: "Cormorant Garamond", "Palatino Linotype", Georgia, serif;
+  letter-spacing: -0.018em;
+}
+
+.post-title {
+  font-size: clamp(2.35rem, 5vw, 3.4rem);
+  font-weight: 600;
+}
+
+.post-header .desc {
+  color: #8b7958;
+  font-size: 1.05rem;
+}
+
+h2 {
+  margin-top: 2.25rem;
+  padding-bottom: 0.42rem;
+  border-bottom: 1px solid var(--global-divider-color);
+}
+
+p {
+  line-height: 1.78;
+}
+
+a,
+a:visited {
+  color: var(--global-theme-color);
+}
+
+a:hover {
+  color: var(--global-hover-color);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.navbar {
+  background: rgba(250, 246, 233, 0.86);
+  border-bottom: 1px solid rgba(126, 101, 57, 0.16);
+  box-shadow: 0 4px 22px rgba(100, 77, 37, 0.035);
+  backdrop-filter: blur(14px);
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+  font-family: Inter, "Segoe UI", sans-serif;
+}
+
+.card,
+.projects .card,
+.cv .card {
+  overflow: hidden;
+  background: var(--global-card-bg-color);
+  border: 1px solid rgba(151, 122, 69, 0.18);
+  border-radius: 18px;
+  box-shadow: 0 10px 28px rgba(104, 82, 42, 0.065);
+}
+
+.card-title {
+  color: #59472d;
+}
+
+.profile img {
+  border: 5px solid rgba(255, 252, 244, 0.9);
+  border-radius: 22px;
+  box-shadow: 0 12px 32px rgba(104, 82, 42, 0.13);
+}
+
+blockquote {
+  background: rgba(255, 252, 244, 0.76);
+  border-left: 4px solid #c6a052;
+  border-radius: 0 14px 14px 0;
+}
+
+hr {
+  border-top-color: var(--global-divider-color);
+}
+
+table:not(.table) {
+  background: rgba(255, 252, 244, 0.58);
+  border-radius: 12px;
+}
+
+footer,
+footer.fixed-bottom {
+  background: rgba(238, 229, 209, 0.9);
+  border-top: 1px solid rgba(126, 101, 57, 0.15);
+  backdrop-filter: blur(12px);
+}
+
+::selection {
+  color: #463b2b;
+  background: rgba(218, 190, 125, 0.48);
+}
+
+@media (max-width: 767px) {
+  body {
+    background-attachment: scroll;
+  }
+
+  .post-title {
+    font-size: 2.45rem;
+  }
+
+  h2 {
+    margin-top: 1.8rem;
+  }
+}
