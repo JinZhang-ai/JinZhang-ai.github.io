@@ -271,3 +271,34 @@ a:focus-visible {
     font-size: 0.75rem;
   }
 }
+
+/* Final editorial polish: smaller portrait, literary type, botanical accents. */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap');
+body { font-family: 'DM Sans', 'Segoe UI', sans-serif; }
+.homepage-name, .homepage-section > h2, .homepage-entry-body h3 { font-family: 'Cormorant Garamond', Georgia, serif; }
+.homepage-hero { grid-template-columns: minmax(170px, .58fr) minmax(0, 1.8fr); align-items: center; gap: clamp(1.5rem, 4vw, 3.2rem); }
+.homepage-portrait-wrap { width: min(100%, 250px); min-height: 0; aspect-ratio: 4 / 5; justify-self: center; padding: 7px; border-radius: 8px; transform: rotate(-1deg); }
+.homepage-portrait { min-height: 0; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 36%; }
+.homepage-intro { min-height: 0; justify-content: center; gap: .55rem; }
+.homepage-name { font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(2.8rem, 5vw, 4.1rem); font-weight: 700; letter-spacing: -.035em; }
+.homepage-bio { max-width: 56ch; font-size: .96rem; }
+.homepage-contact-grid { margin-top: .8rem; padding-top: .85rem; }
+.homepage-profile-links { gap: 1.1rem; margin-top: .6rem; }
+.homepage-section > h2 { font-size: 1.9rem; font-weight: 700; }
+.homepage-entry { grid-template-columns: 140px minmax(0,1fr); padding: 1.25rem 0; }
+.homepage-entry-body h3 { font-size: 1.42rem; }
+.homepage-entry-mentor { color: #806b4c; font-size: .91rem; }
+.homepage-publication-venue { max-width: 75ch; line-height: 1.55; }
+.homepage-publication { position: relative; }
+.homepage-section#honors { position: relative; padding-bottom: 2.2rem; }
+.homepage-section#honors::after { content: ''; display: block; position: absolute; right: 0; bottom: -1.3rem; width: min(280px, 35vw); height: 145px; background: url('../img/van-gogh-sun-daisies.webp') center / contain no-repeat; opacity: .74; pointer-events: none; }
+.homepage-section#honors .honors-grid { position: relative; z-index: 1; }
+.honor-card { background: rgba(255,252,244,.72); }
+.honor-mark { width: 92px; height: 74px; border: 0; background: transparent; }
+.honor-mark img { padding: 0; object-fit: contain; }
+@media (max-width:767px) {
+ .homepage-hero { grid-template-columns: 1fr; }
+ .homepage-portrait-wrap { width: min(100%, 190px); margin: 0 auto; }
+ .homepage-entry { grid-template-columns: 1fr; gap: .25rem; }
+ .homepage-section#honors::after { width: 160px; height: 100px; opacity: .55; }
+}

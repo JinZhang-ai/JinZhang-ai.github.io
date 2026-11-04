@@ -8,24 +8,24 @@ nav: false
 
 <section id="about" class="homepage-hero" aria-label="About Jin Zhang">
   <div class="homepage-portrait-wrap">
-    <img class="homepage-portrait" src="{{ '/assets/img/jin-zhang-avatar.jpg' | relative_url }}" alt="Van Gogh oil painting portrait" width="640" height="800" fetchpriority="high">
+    <img class="homepage-portrait" src="{{ '/assets/img/jin-zhang-avatar.webp' | relative_url }}" alt="Van Gogh-inspired portrait of Jin Zhang" width="640" height="800" fetchpriority="high">
   </div>
   <div class="homepage-intro">
     <div class="homepage-intro-main">
-      <p class="homepage-eyebrow">ABOUT ME · UNDERGRADUATE RESEARCHER</p>
+      <p class="homepage-eyebrow">ACADEMIC HOMEPAGE · PERSONAL PROFILE</p>
       <h1 class="homepage-name">Jin Zhang <span>张津</span></h1>
       <p class="homepage-role">School of Information Science &amp; Engineering · Lanzhou University</p>
-      <p class="homepage-bio">I am an undergraduate student in <strong>Data Science and Big Data Technology</strong> at <strong>Lanzhou University</strong>, within the School of Information Science &amp; Engineering. My research focuses on the reliability of large language models and their use in recommendation, generative search, and agentic systems.</p>
+      <p class="homepage-bio">Undergraduate researcher at Lanzhou University, exploring reliable language models, multimodal recommendation, and intelligent agents.</p>
     </div>
-    <p class="homepage-research-note">I am particularly interested in how models use evidence, how information is surfaced to users, and how agents make reliable decisions.</p>
+    <div class="homepage-profile-links"><a href="https://scholar.google.com/citations?user=w5FWsHYAAAAJ&amp;hl=zh-CN" target="_blank" rel="noopener noreferrer">Google Scholar ↗</a><a href="https://orcid.org/0009-0000-9325-8251" target="_blank" rel="noopener noreferrer">ORCID ↗</a><a href="https://github.com/JinZhang-ai" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
     <div class="homepage-contact-grid">
       <div class="homepage-contact-item">
         <span class="homepage-contact-label">Location</span>
         <span>Lanzhou, Gansu, China</span>
       </div>
       <div class="homepage-contact-item">
-        <span class="homepage-contact-label">Age</span>
-        <span>20</span>
+        <span class="homepage-contact-label">Affiliation</span>
+        <span>School of Information Science &amp; Engineering, Lanzhou University</span>
       </div>
       <div class="homepage-contact-item">
         <span class="homepage-contact-label">Email</span>
@@ -36,7 +36,7 @@ nav: false
         <a href="mailto:zhangjin2024@lzu.edu.cn">zhangjin2024@lzu.edu.cn</a>
       </div>
     </div>
-    <div class="homepage-profile-links"><a href="https://github.com/JinZhang-ai" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="mailto:zhangjin2024@lzu.edu.cn">Get in touch ↗</a></div>
+    <div class="homepage-profile-links"><a href="mailto:zhangjin2024@lzu.edu.cn">Contact ↗</a></div>
   </div>
 </section>
 
@@ -47,8 +47,8 @@ nav: false
     <div class="homepage-entry-body">
       <h3>Lanzhou University</h3>
       <p class="homepage-entry-role">Undergraduate · Data Science and Big Data Technology</p>
-      <p>Advisors: Prof. Zepeng Li · Assoc. Prof. Jishen Dang</p>
-      <p class="homepage-entry-note">Research: Multimodal Recommendation Systems · Knowledge Graphs</p>
+      <p class="homepage-entry-mentor">Research Advisors: Prof. Zepeng Li · Assoc. Prof. Jishen Dang</p>
+      <p class="homepage-entry-note">Research Focus: Multimodal Recommendation · Knowledge Graphs · Sequential Recommendation</p>
     </div>
   </article>
   <article class="homepage-entry">
@@ -56,8 +56,8 @@ nav: false
     <div class="homepage-entry-body">
       <h3>Mohamed bin Zayed University of Artificial Intelligence (MBZUAI)</h3>
       <p class="homepage-entry-role">Research Assistant Intern</p>
-      <p>Mentor: Lijie Hu · Postdoctoral Researcher</p>
-      <p class="homepage-entry-note">Research: LLM Hallucination · Representation Learning</p>
+      <p class="homepage-entry-mentor">Research Mentor: Dr. Lijie Hu</p>
+      <p class="homepage-entry-note">Research Focus: LLM Hallucination · Representation Learning · Multimodal Reasoning</p>
     </div>
   </article>
 </section>
@@ -97,7 +97,7 @@ nav: false
       <span class="homepage-oral">ORAL</span>
     </div>
     <p class="homepage-publication-authors">Yanyan Wu, Guanyu Zhu, Changbin Zhao, <strong>Jin Zhang</strong>, Dexu Yu, Tianmin Sun, Jining Luan, Chunxiao Li, Hanwen Du, Youhua Li</p>
-    <p class="homepage-publication-venue">CIKM 2026 · Full Research Track</p>
+    <p class="homepage-publication-venue">Proceedings of the 35th ACM International Conference on Information and Knowledge Management (CIKM 2026) · Full Research Track · CCF-B · CORE A</p>
     <div class="homepage-paper-links"><a href="https://arxiv.org/abs/2610.25121" target="_blank" rel="noopener noreferrer" aria-label="ClinSDT paper on arXiv">Paper ↗</a><a href="https://arxiv.org/pdf/2610.25121" target="_blank" rel="noopener noreferrer" aria-label="ClinSDT PDF">PDF ↗</a></div>
   </article>
   <article class="homepage-publication">
@@ -105,7 +105,7 @@ nav: false
       <h3><a href="https://arxiv.org/abs/2608.22751" target="_blank" rel="noopener noreferrer">Risk-Aware Reranking for Agentic Tool Retrieval</a></h3>
     </div>
     <p class="homepage-publication-authors">Qinfei Li, Xiaoxuan Dong, <strong>Jin Zhang</strong>, Dexu Yu, Wenhao Deng, Junchen Fu, Youhua Li, Hanwen Du, Chunxiao Li</p>
-    <p class="homepage-publication-venue">CIKM 2026</p>
+    <p class="homepage-publication-venue">Proceedings of the 35th ACM International Conference on Information and Knowledge Management (CIKM 2026) · CCF-B · CORE A</p>
     <div class="homepage-paper-links"><a href="https://arxiv.org/abs/2608.22751" target="_blank" rel="noopener noreferrer" aria-label="Risk-Aware Reranking paper on arXiv">Paper ↗</a><a href="https://arxiv.org/pdf/2608.22751" target="_blank" rel="noopener noreferrer" aria-label="Risk-Aware Reranking PDF">PDF ↗</a></div>
   </article>
 </section>
@@ -115,4 +115,4 @@ nav: false
   {% include homepage-honors.liquid %}
 </section>
 
-<div class="homepage-closing"><p>Interested in related research? <a href="mailto:zhangjin2024@lzu.edu.cn">Let’s connect.</a></p><a href="#about">Back to top ↑</a></div>
+<div class="homepage-closing"><p>Thank you for visiting my homepage. <a href="mailto:zhangjin2024@lzu.edu.cn">Let’s connect.</a></p><a href="#about">Back to top ↑</a></div>
