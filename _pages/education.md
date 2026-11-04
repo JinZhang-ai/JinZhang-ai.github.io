@@ -1,6 +1,6 @@
 ---
 layout: page
-title: education
+title: Education
 permalink: /education/
 description: Academic background.
 nav: true
@@ -11,4 +11,8 @@ nav_order: 2
 
 **School of Information Science & Engineering**
 
-Undergraduate studies.
+Undergraduate studies · 2024–2028
+
+Advisors: **Prof. Zepeng Li** · **Assoc. Prof. Jishen Dang**
+
+Research: Multimodal Recommendation Systems · Knowledge Graphs
