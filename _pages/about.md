@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Research on LLM reasoning, agentic systems, and multimodal intelligence.
+subtitle: Undergraduate Researcher at Lanzhou University · Research Intern at MBZUAI
 
 selected_papers: false
 social: true
@@ -20,25 +20,39 @@ latest_posts:
 
 ## About Me
 
-I am an undergraduate researcher at the **School of Information Science & Engineering, Lanzhou University**. My research interests center on building more capable and reliable intelligent systems, with an emphasis on large language models, agentic systems, and multimodal reasoning.
+I am an undergraduate researcher at **Lanzhou University** (2024–2028).
 
-I am particularly interested in understanding how models represent and develop reasoning trajectories, how agents maintain reliable long-term memory, and how intelligent systems can make grounded decisions in complex environments.
+I am also a **Research Assistant Intern at MBZUAI** (2026–2027).
+
+At Lanzhou University, I work with **Prof. Zepeng Li** and **Assoc. Prof. Jishen Dang**.
+
+My research focuses on **multimodal recommendation systems** and **knowledge graphs**.
+
+At MBZUAI, I work with **Lijie Hu**, a postdoctoral researcher.
+
+My current topics include **LLM hallucination** and **representation learning**.
 
 ## Research Interests
 
-- **LLM Reasoning and Representation Steering:** activation-space interventions, latent reasoning dynamics, and controllable generation.
-- **Agent Memory, Reliability, and Safety:** evidence-grounded memory governance, verifier errors, and reliable long-horizon agents.
-- **Multimodal and Visual Reasoning:** video understanding, visual evidence, and hallucination mitigation.
-- **Recommendation and Agentic Systems:** memory-augmented recommendation and agent interaction with real-world information environments.
+- Large Language Model Reasoning
+- LLM Hallucination and Reliability
+- Representation Learning
+- Multimodal Recommendation
+- Knowledge Graphs
 
 ## Selected Research
 
-- **[BRIDGE](/projects/bridge/)** — Branch-guided residual interventions for steering model-supported reasoning trajectories.
-- **[WitMem](/projects/witmem/)** — Evidence-witnessed governance for reliable long-term agent memory.
-- **[FinMemRec](/projects/finmemrec/)** — Dynamic agent memory for financial recommendation.
-- **[Agentic Affordance Optimization](/projects/aao/)** — Understanding and improving website affordances for agentic task execution.
+- **[BRIDGE](/projects/bridge/)** — Steering model-supported reasoning trajectories.
+- **[WitMem](/projects/witmem/)** — Governing reliable long-term agent memory.
+- **[FinMemRec](/projects/finmemrec/)** — Dynamic memory for financial recommendation.
+- **[Agentic Affordance Optimization](/projects/aao/)** — Improving websites for agentic task execution.
 
-## Education
+## Academic Experience
 
-**Lanzhou University**  
-School of Information Science & Engineering
+**Lanzhou University** · 2024–2028  
+Undergraduate Researcher · Multimodal Recommendation · Knowledge Graphs
+
+**MBZUAI** · 2026–2027  
+Research Assistant Intern · LLM Hallucination · Representation Learning
+
+[More about my experience](/experience/) · [Honors & Awards](/honors/)
