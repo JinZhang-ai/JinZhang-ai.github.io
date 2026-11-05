@@ -12,10 +12,11 @@ nav: false
   </div>
   <div class="homepage-intro">
     <div class="homepage-intro-main">
-      <p class="homepage-eyebrow">ACADEMIC HOMEPAGE · PERSONAL PROFILE</p>
+      <p class="homepage-eyebrow">ABOUT ME · UNDERGRADUATE RESEARCHER</p>
       <h1 class="homepage-name">Jin Zhang <span>张津</span></h1>
       <p class="homepage-role">School of Information Science &amp; Engineering · Lanzhou University</p>
       <p class="homepage-bio">Undergraduate researcher at Lanzhou University, exploring reliable language models, multimodal recommendation, and intelligent agents.</p>
+      <p class="homepage-phd-note"><span>PhD 2028</span> Looking for fully funded PhD opportunities starting Fall 2028.</p>
     </div>
     <div class="homepage-profile-links"><a href="https://scholar.google.com/citations?user=w5FWsHYAAAAJ&amp;hl=zh-CN" target="_blank" rel="noopener noreferrer">Google Scholar ↗</a><a href="https://orcid.org/0009-0000-9325-8251" target="_blank" rel="noopener noreferrer">ORCID ↗</a><a href="https://github.com/JinZhang-ai" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
     <div class="homepage-contact-grid">
@@ -27,16 +28,13 @@ nav: false
         <span class="homepage-contact-label">Affiliation</span>
         <span>School of Information Science &amp; Engineering, Lanzhou University</span>
       </div>
-      <div class="homepage-contact-item">
-        <span class="homepage-contact-label">Email</span>
-        <a href="mailto:mjzj35723@gmail.com">mjzj35723@gmail.com</a>
-      </div>
-      <div class="homepage-contact-item">
-        <span class="homepage-contact-label">University Email</span>
-        <a href="mailto:zhangjin2024@lzu.edu.cn">zhangjin2024@lzu.edu.cn</a>
-      </div>
     </div>
-    <div class="homepage-profile-links"><a href="mailto:zhangjin2024@lzu.edu.cn">Contact ↗</a></div>
+    <div class="homepage-email-row">
+      <span class="homepage-contact-label">Email</span>
+      <a href="mailto:zhangjin2024@lzu.edu.cn">zhangjin2024@lzu.edu.cn</a>
+      <span class="homepage-email-separator" aria-hidden="true">·</span>
+      <a href="mailto:mjzj35723@gmail.com">mjzj35723@gmail.com</a>
+    </div>
   </div>
 </section>
 
@@ -45,8 +43,13 @@ nav: false
   <article class="homepage-entry">
     <div class="homepage-entry-date">2024 — 2028</div>
     <div class="homepage-entry-body">
-      <h3>Lanzhou University</h3>
-      <p class="homepage-entry-role">Undergraduate · Data Science and Big Data Technology</p>
+      <div class="homepage-entry-title-row">
+        <img class="homepage-institution-logo" src="https://www.urongda.com/images/normal/medium/lanzhou-university-logo-1024px.png" alt="Lanzhou University emblem" width="88" height="88" loading="lazy">
+        <div>
+          <h3>Lanzhou University</h3>
+          <p class="homepage-entry-role">Undergraduate · Data Science and Big Data Technology</p>
+        </div>
+      </div>
       <p class="homepage-entry-mentor">Research Advisors: Prof. Zepeng Li · Assoc. Prof. Jishen Dang</p>
       <p class="homepage-entry-note">Research Focus: Multimodal Recommendation · Knowledge Graphs · Sequential Recommendation</p>
     </div>
@@ -88,8 +91,8 @@ nav: false
   </div>
 </section>
 
-<section class="homepage-section" id="selected-publications">
-  <h2>Selected Publications</h2>
+<section class="homepage-section" id="publications">
+  <h2>Publications</h2>
   <p class="homepage-section-note">Published / accepted · 2026</p>
   <article class="homepage-publication">
     <div class="homepage-publication-heading">
@@ -97,7 +100,7 @@ nav: false
       <span class="homepage-oral">ORAL</span>
     </div>
     <p class="homepage-publication-authors">Yanyan Wu, Guanyu Zhu, Changbin Zhao, <strong>Jin Zhang</strong>, Dexu Yu, Tianmin Sun, Jining Luan, Chunxiao Li, Hanwen Du, Youhua Li</p>
-    <p class="homepage-publication-venue">Proceedings of the 35th ACM International Conference on Information and Knowledge Management (CIKM 2026) · Full Research Track · CCF-B · CORE A</p>
+    <p class="homepage-publication-venue">Proceedings of the 35th ACM International Conference on Information and Knowledge Management (CIKM 2026) · Main Conference Paper · CCF-B · CORE A</p>
     <div class="homepage-paper-links"><a href="https://arxiv.org/abs/2610.25121" target="_blank" rel="noopener noreferrer" aria-label="ClinSDT paper on arXiv">Paper ↗</a><a href="https://arxiv.org/pdf/2610.25121" target="_blank" rel="noopener noreferrer" aria-label="ClinSDT PDF">PDF ↗</a></div>
   </article>
   <article class="homepage-publication">
@@ -105,8 +108,19 @@ nav: false
       <h3><a href="https://arxiv.org/abs/2608.22751" target="_blank" rel="noopener noreferrer">Risk-Aware Reranking for Agentic Tool Retrieval</a></h3>
     </div>
     <p class="homepage-publication-authors">Qinfei Li, Xiaoxuan Dong, <strong>Jin Zhang</strong>, Dexu Yu, Wenhao Deng, Junchen Fu, Youhua Li, Hanwen Du, Chunxiao Li</p>
-    <p class="homepage-publication-venue">Proceedings of the 35th ACM International Conference on Information and Knowledge Management (CIKM 2026) · CCF-B · CORE A</p>
+    <p class="homepage-publication-venue">Proceedings of the 35th ACM International Conference on Information and Knowledge Management (CIKM 2026) · Main Conference Paper · CCF-B · CORE A</p>
     <div class="homepage-paper-links"><a href="https://arxiv.org/abs/2608.22751" target="_blank" rel="noopener noreferrer" aria-label="Risk-Aware Reranking paper on arXiv">Paper ↗</a><a href="https://arxiv.org/pdf/2608.22751" target="_blank" rel="noopener noreferrer" aria-label="Risk-Aware Reranking PDF">PDF ↗</a></div>
+  </article>
+</section>
+
+<section class="homepage-section" id="academic-service">
+  <h2>Academic Service</h2>
+  <article class="homepage-service">
+    <div class="homepage-service-date">2027</div>
+    <div class="homepage-service-body">
+      <h3>Reviewer</h3>
+      <p><a href="https://www.wsdm-conference.org/2027/" target="_blank" rel="noopener noreferrer">The 20th ACM International Conference on Web Search and Data Mining (WSDM 2027)</a></p>
+    </div>
   </article>
 </section>
 
