@@ -48,7 +48,7 @@ nav: false
     <div class="homepage-entry-body">
       <p class="homepage-entry-kind">EDUCATION</p>
       <div class="homepage-entry-title-row">
-        <img class="homepage-institution-logo" src="https://www.urongda.com/images/normal/medium/lanzhou-university-logo-1024px.png" alt="Lanzhou University emblem" width="88" height="88" loading="lazy">
+        <div class="homepage-institution-mark"><img class="homepage-institution-logo" src="{{ '/assets/img/institution-logos/lanzhou-official.png' | relative_url }}" alt="Lanzhou University emblem" width="88" height="88" loading="lazy"></div>
         <div><h3>Lanzhou University</h3>
         <p class="homepage-entry-role">Undergraduate · Data Science and Big Data Technology</p></div>
       </div>
@@ -63,8 +63,11 @@ nav: false
     <div class="homepage-entry-date">2026 — 2027</div>
     <div class="homepage-entry-body">
       <p class="homepage-entry-kind">RESEARCH EXPERIENCE</p>
-      <h3>Mohamed bin Zayed University of Artificial Intelligence</h3>
-      <p class="homepage-entry-role">Research Assistant Intern</p>
+      <div class="homepage-entry-title-row">
+        <div class="homepage-institution-mark homepage-institution-mark--mbzuai"><img class="homepage-institution-logo" src="{{ '/assets/img/institution-logos/mbzuai-emblem.png' | relative_url }}" alt="MBZUAI official university logo" width="400" height="400" loading="lazy"></div>
+        <div><h3>Mohamed bin Zayed University of Artificial Intelligence</h3>
+        <p class="homepage-entry-role">Research Assistant Intern</p></div>
+      </div>
       <dl class="homepage-experience-details">
         <div><dt>Institution</dt><dd>Mohamed bin Zayed University of Artificial Intelligence (MBZUAI)</dd></div>
         <div><dt>Mentor</dt><dd>Dr. Lijie Hu</dd></div>
@@ -73,6 +76,8 @@ nav: false
     </div>
   </article>
 </section>
+
+<div class="homepage-painted-divider" aria-hidden="true"><span></span><img src="{{ '/assets/img/oil-daisy-garland.webp' | relative_url }}" alt="" width="1200" height="400" loading="lazy"><span></span></div>
 
 <section class="homepage-section" id="research-interests">
   <h2>Research Interests</h2>
@@ -140,4 +145,5 @@ nav: false
   {% include homepage-honors.liquid %}
 </section>
 
+<div class="homepage-closing-art" aria-hidden="true"><img src="{{ '/assets/img/oil-daisy-garland.webp' | relative_url }}" alt="" width="1200" height="400" loading="lazy"></div>
 <div class="homepage-closing"><p>Thank you for visiting my homepage. <a href="mailto:zhangjin2024@lzu.edu.cn">Let’s connect.</a></p><a href="#about">Back to top ↑</a></div>

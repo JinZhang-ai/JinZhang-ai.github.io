@@ -1,0 +1,1339 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap");
+/* Single-page navigation and academic reading rhythm. */
+:root {
+  --global-theme-color: #42665c;
+  --global-hover-color: #315b79;
+}
+
+.homepage-site-header {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(126, 101, 57, 0.18);
+  background: rgba(250, 246, 233, 0.96);
+  backdrop-filter: blur(14px);
+}
+.homepage-nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  max-width: 1040px;
+  min-height: 68px;
+  margin: 0 auto;
+  padding: 0.7rem 20px;
+}
+.homepage-brand,
+.homepage-brand:visited {
+  flex-shrink: 0;
+  color: #4d4937;
+  font-family: Georgia, serif;
+  font-size: 1.22rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+.homepage-brand span[lang] {
+  margin-left: 0.3rem;
+  font-size: 0.75em;
+  color: #786346;
+}
+.homepage-flower {
+  display: inline-block;
+  margin-right: 0.35rem;
+  color: #b38b39;
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
+.homepage-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem 1.2rem;
+}
+.homepage-navigation a {
+  padding: 0.5rem 0;
+  color: #575444;
+  font-size: 0.84rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+.homepage-navigation a:hover {
+  color: #315b79;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+.homepage-skip {
+  position: fixed;
+  top: -100px;
+  left: 1rem;
+  z-index: 1100;
+  padding: 0.75rem 1rem;
+  background: #fffdf6;
+}
+.homepage-skip:focus {
+  top: 0.5rem;
+}
+a:focus-visible {
+  outline: 2px solid #315b79;
+  outline-offset: 5px;
+  border-radius: 2px;
+}
+.homepage-hero {
+  scroll-margin-top: 100px;
+  align-items: start;
+  margin-top: 1.6rem;
+}
+.homepage-portrait-wrap {
+  min-height: 0;
+  padding: 7px;
+  border-radius: 8px;
+  background: #fffaf0;
+  transform: rotate(-1deg);
+  box-shadow: 0 14px 35px rgba(90, 77, 43, 0.12);
+}
+.homepage-portrait {
+  height: auto;
+  min-height: 0;
+  aspect-ratio: 4 / 5;
+  border-radius: 4px;
+  object-fit: cover;
+}
+.homepage-intro {
+  min-height: 0;
+}
+.homepage-eyebrow {
+  color: #596e56;
+}
+.homepage-bio,
+.homepage-research-note {
+  font-size: 0.97rem;
+  line-height: 1.8;
+}
+.homepage-research-note {
+  margin: 0.75rem 0 0;
+  color: #685d49;
+}
+.homepage-contact-grid {
+  margin-top: 1rem;
+  gap: 0.8rem 1.25rem;
+}
+.homepage-contact-label {
+  color: #786346;
+}
+.homepage-contact-item a {
+  color: #42665c;
+}
+.homepage-profile-links,
+.homepage-paper-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+.homepage-section {
+  margin-bottom: 3.1rem;
+  scroll-margin-top: 100px;
+}
+.homepage-section > h2 {
+  font-family: Georgia, "Palatino Linotype", serif;
+  font-size: 1.7rem;
+  font-weight: 600;
+  border-bottom-color: rgba(82, 105, 81, 0.24);
+}
+.homepage-entry-date {
+  color: #716045;
+}
+.homepage-entry-body .homepage-entry-note {
+  color: #6c6556;
+}
+.homepage-interest {
+  position: relative;
+  padding-left: 2.3rem;
+}
+.homepage-interest-number {
+  position: absolute;
+  top: 0.85rem;
+  left: 0;
+  font-family: Georgia, serif;
+  font-size: 1.2rem;
+  color: #647f75;
+}
+.homepage-section-note {
+  margin: -0.4rem 0 0;
+  color: #74644d;
+  font-size: 0.82rem;
+}
+.homepage-publication {
+  padding: 1.4rem 0;
+}
+.homepage-publication h3 {
+  font-size: 1.08rem;
+}
+.homepage-publication h3 a {
+  color: #345d71;
+}
+.homepage-publication-venue {
+  color: #79613d;
+}
+.homepage-paper-links {
+  margin-top: 0.65rem;
+}
+.homepage-paper-links a {
+  border-bottom: 1px solid rgba(66, 102, 92, 0.3);
+  text-decoration: none;
+}
+.homepage-closing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.5rem 1rem;
+  border-top: 1px solid var(--global-divider-color);
+  padding: 1.3rem 0 0.5rem;
+  font-size: 0.9rem;
+}
+.homepage-closing p {
+  margin: 0;
+}
+.honor-card {
+  border-radius: 10px;
+  box-shadow: none;
+}
+.honor-mark {
+  border-radius: 8px;
+  background: #f2eedb;
+}
+.honor-card:nth-child(2) .honor-mark {
+  background: #e9eee3;
+  color: #42665c;
+}
+.honor-card:nth-child(3) .honor-mark {
+  background: #e6edf0;
+  color: #345d71;
+}
+.honor-meta {
+  color: #71634c;
+}
+#main-content {
+  display: block;
+  scroll-margin-top: 100px;
+}
+@media (max-width: 767px) {
+  body.fixed-top-nav {
+    padding-top: 108px;
+  }
+  .homepage-nav-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.1rem;
+    padding: 0.55rem 20px;
+  }
+  .homepage-navigation {
+    gap: 0.1rem 1rem;
+  }
+  .homepage-navigation a {
+    font-size: 0.76rem;
+  }
+  .homepage-hero {
+    margin-top: 0.5rem;
+  }
+  .homepage-portrait-wrap {
+    width: min(100%, 260px);
+    aspect-ratio: auto;
+  }
+  .homepage-section,
+  .homepage-hero,
+  #main-content {
+    scroll-margin-top: 130px;
+  }
+  .homepage-section > h2 {
+    font-size: 1.5rem;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+.honor-mark-word {
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+@media (max-width: 767px) {
+  .honor-mark-word {
+    font-size: 0.75rem;
+  }
+}
+
+/* Final editorial polish: smaller portrait, literary type, botanical accents. */
+body {
+  font-family: "DM Sans", "Segoe UI", sans-serif;
+}
+.homepage-name,
+.homepage-section > h2,
+.homepage-entry-body h3 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+}
+.homepage-hero {
+  grid-template-columns: minmax(170px, 0.58fr) minmax(0, 1.8fr);
+  align-items: center;
+  gap: clamp(1.5rem, 4vw, 3.2rem);
+}
+.homepage-portrait-wrap {
+  width: min(100%, 250px);
+  min-height: 0;
+  aspect-ratio: 4 / 5;
+  justify-self: center;
+  padding: 7px;
+  border-radius: 8px;
+  transform: rotate(-1deg);
+}
+.homepage-portrait {
+  min-height: 0;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 36%;
+}
+.homepage-intro {
+  min-height: 0;
+  justify-content: center;
+  gap: 0.55rem;
+}
+.homepage-name {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(2.8rem, 5vw, 4.1rem);
+  font-weight: 700;
+  letter-spacing: -0.035em;
+}
+.homepage-bio {
+  max-width: 56ch;
+  font-size: 0.96rem;
+}
+.homepage-contact-grid {
+  margin-top: 0.8rem;
+  padding-top: 0.85rem;
+}
+.homepage-profile-links {
+  gap: 1.1rem;
+  margin-top: 0.6rem;
+}
+.homepage-section > h2 {
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+.homepage-entry {
+  grid-template-columns: 140px minmax(0, 1fr);
+  padding: 1.25rem 0;
+}
+.homepage-entry-body h3 {
+  font-size: 1.42rem;
+}
+.homepage-entry-mentor {
+  color: #806b4c;
+  font-size: 0.91rem;
+}
+.homepage-publication-venue {
+  max-width: 75ch;
+  line-height: 1.55;
+}
+.homepage-publication {
+  position: relative;
+}
+.homepage-section#honors {
+  position: relative;
+  padding-bottom: 2.2rem;
+}
+.homepage-section#honors::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: -1.3rem;
+  width: min(280px, 35vw);
+  height: 145px;
+  background: url("../img/oil-sun-daisies.webp") center / contain no-repeat;
+  opacity: 0.74;
+  pointer-events: none;
+}
+.homepage-section#honors .honors-grid {
+  position: relative;
+  z-index: 1;
+}
+.honor-card {
+  background: rgba(255, 252, 244, 0.72);
+}
+.honor-mark {
+  width: 92px;
+  height: 74px;
+  border: 0;
+  background: transparent;
+}
+.honor-mark img {
+  padding: 0;
+  object-fit: contain;
+}
+@media (max-width: 767px) {
+  .homepage-hero {
+    grid-template-columns: 1fr;
+  }
+  .homepage-portrait-wrap {
+    width: min(100%, 190px);
+    margin: 0 auto;
+  }
+  .homepage-entry {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+  .homepage-section#honors::after {
+    width: 160px;
+    height: 100px;
+    opacity: 0.55;
+  }
+}
+
+/* Profile refinements requested in the latest update. */
+.homepage-email-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem 0.85rem;
+  margin-top: 0.85rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(126, 101, 57, 0.18);
+  font-size: 0.88rem;
+}
+.homepage-email-row a {
+  color: #42665c;
+  font-weight: 600;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+.homepage-email-row a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.homepage-email-separator {
+  color: #a28b61;
+}
+.homepage-phd-note {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem 0.7rem;
+  margin: 0.85rem 0 0.25rem;
+  color: #675b43;
+  font-size: 0.91rem;
+  line-height: 1.6;
+}
+.homepage-phd-note span {
+  display: inline-block;
+  padding: 0.18rem 0.55rem;
+  border: 1px solid rgba(135, 105, 55, 0.35);
+  border-radius: 999px;
+  color: #806b4c;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+.homepage-entry-title-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.homepage-institution-logo {
+  display: block;
+  flex: 0 0 70px;
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+.homepage-entry-title-row h3 {
+  margin: 0 0 0.2rem;
+}
+.homepage-entry-title-row .homepage-entry-role {
+  margin: 0;
+}
+.homepage-service {
+  display: grid;
+  grid-template-columns: 140px minmax(0, 1fr);
+  gap: 1rem;
+  padding: 1.2rem 0;
+  border-bottom: 1px solid rgba(126, 101, 57, 0.16);
+}
+.homepage-service-date {
+  color: #716045;
+  font-size: 0.9rem;
+}
+.homepage-service-body h3 {
+  margin: 0 0 0.35rem;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.42rem;
+}
+.homepage-service-body p {
+  margin: 0;
+  line-height: 1.65;
+}
+.homepage-service-body a {
+  color: #345d71;
+}
+@media (max-width: 767px) {
+  .homepage-email-row {
+    gap: 0.35rem 0.55rem;
+  }
+  .homepage-entry-title-row {
+    gap: 0.7rem;
+  }
+  .homepage-institution-logo {
+    flex-basis: 56px;
+    width: 56px;
+    height: 56px;
+  }
+  .homepage-service {
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
+  }
+}
+
+/* Personal profile, original-resolution portrait, and quiet painted details. */
+.homepage-hero {
+  grid-template-columns: 215px minmax(0, 1fr);
+  gap: 3.2rem;
+  align-items: center;
+  margin-top: 1.4rem;
+  margin-bottom: 2.6rem;
+}
+.homepage-visual {
+  position: relative;
+  min-width: 0;
+}
+.homepage-portrait-wrap {
+  width: 215px;
+  aspect-ratio: 1;
+  padding: 6px;
+  margin: 0;
+}
+.homepage-portrait {
+  aspect-ratio: 1;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.homepage-botanical {
+  display: block;
+  width: 190px;
+  height: auto;
+  margin: 0.6rem auto -0.7rem;
+  opacity: 0.92;
+}
+.homepage-name {
+  font-size: clamp(3rem, 5vw, 4.35rem);
+  line-height: 1.06;
+  font-weight: 600;
+}
+.homepage-name span {
+  font-family: "Songti SC", "Noto Serif CJK SC", "SimSun", serif;
+  font-weight: 500;
+}
+.homepage-role {
+  margin-bottom: 0.7rem;
+  font-size: 0.92rem;
+}
+.homepage-eyebrow {
+  font-size: 0.66rem;
+  letter-spacing: 0.19em;
+  margin-bottom: 0.55rem;
+}
+.homepage-bio {
+  font-size: 0.92rem;
+  line-height: 1.75;
+}
+.homepage-intro {
+  gap: 0.2rem;
+}
+.homepage-contact-grid {
+  grid-template-columns: 0.8fr 1.6fr;
+}
+.homepage-profile-links {
+  margin-top: 0.6rem;
+}
+.homepage-profile-links a {
+  text-decoration: none;
+  border-bottom: 1px solid rgba(66, 102, 92, 0.28);
+  padding-bottom: 0.2rem;
+}
+.homepage-section > h2 {
+  font-size: 2.1rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.8rem;
+}
+.homepage-entry {
+  grid-template-columns: 125px minmax(0, 1fr);
+  gap: 1.4rem;
+  padding: 1.5rem 0;
+}
+.homepage-entry-date {
+  font-size: 0.83rem;
+  padding-top: 1.6rem;
+}
+.homepage-entry-body .homepage-entry-kind {
+  font-size: 0.63rem;
+  letter-spacing: 0.16em;
+  font-weight: 700;
+  color: #617c6d;
+  margin: 0 0 0.3rem;
+}
+.homepage-entry-body h3 {
+  font-size: 1.65rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.homepage-experience-details {
+  margin: 0.85rem 0 0;
+}
+.homepage-experience-details > div {
+  display: grid;
+  grid-template-columns: 92px minmax(0, 1fr);
+  gap: 0.8rem;
+  margin: 0.32rem 0;
+  font-size: 0.89rem;
+  line-height: 1.65;
+}
+.homepage-experience-details dt {
+  color: #877344;
+  font-weight: 600;
+}
+.homepage-experience-details dd {
+  margin: 0;
+  color: #635946;
+}
+.homepage-publication h3 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 700;
+  font-size: 1.48rem;
+  line-height: 1.28;
+}
+.homepage-publication-venue {
+  font-style: italic;
+  color: #6c6557;
+  font-size: 0.85rem;
+  max-width: none;
+}
+.homepage-venue-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 0.7rem;
+}
+.homepage-venue-badges span,
+.homepage-venue-badges a {
+  padding: 0.12rem 0.55rem;
+  border: 1px solid #d9d5bc;
+  border-radius: 4px;
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: #526c61;
+  background: #eff1e7;
+  text-decoration: none;
+}
+.homepage-venue-badges span {
+  color: #85692f;
+  background: #f6eed8;
+}
+.honor-card {
+  grid-template-columns: 138px minmax(0, 1fr);
+  gap: 1.4rem;
+  padding: 1.3rem 1.5rem;
+}
+.honor-mark,
+.honor-card:nth-child(2) .honor-mark {
+  width: 132px;
+  height: 80px;
+  background: transparent;
+  border-radius: 5px;
+}
+.honor-mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 5px;
+}
+.honor-card:nth-child(2) .honor-mark,
+.honor-card:nth-child(3) .honor-mark {
+  background: #465c53;
+  padding: 6px;
+}
+.homepage-section#honors::after {
+  display: none;
+}
+.homepage-closing {
+  padding-bottom: 1rem;
+}
+@media (max-width: 767px) {
+  .homepage-hero {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+  .homepage-visual {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .homepage-portrait-wrap {
+    width: 155px;
+    flex: 0 0 155px;
+    margin: 0;
+  }
+  .homepage-botanical {
+    width: 120px;
+    margin: 0;
+  }
+  .homepage-name {
+    font-size: 3.2rem;
+  }
+  .homepage-contact-grid {
+    grid-template-columns: 1fr;
+    gap: 0.6rem;
+  }
+  .homepage-section > h2 {
+    font-size: 1.85rem;
+  }
+  .homepage-entry {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+  .homepage-entry-date {
+    padding-top: 0;
+  }
+  .homepage-experience-details > div {
+    grid-template-columns: 78px minmax(0, 1fr);
+    gap: 0.5rem;
+    font-size: 0.85rem;
+  }
+  .homepage-entry-body h3 {
+    font-size: 1.5rem;
+  }
+  .honor-card {
+    grid-template-columns: 1fr;
+    gap: 0.65rem;
+    padding: 1.1rem;
+  }
+  .honor-mark,
+  .honor-card:nth-child(2) .honor-mark {
+    width: 125px;
+    height: 62px;
+  }
+}
+@media (max-width: 360px) {
+  .homepage-visual {
+    gap: 0.5rem;
+  }
+  .homepage-botanical {
+    width: 105px;
+  }
+  .homepage-name {
+    font-size: 2.85rem;
+  }
+}
+
+/* A painted folio: ivory paper, botanical margins and consistent reading rhythm. */
+:root {
+  --folio-ink: #4c4939;
+  --folio-sage: #49675b;
+  --folio-gold: #ad8b45;
+  --folio-line: rgba(124, 112, 75, 0.2);
+}
+body {
+  color: var(--folio-ink);
+  background-color: #eeeadd;
+  background-image:
+    radial-gradient(ellipse at 0 10%, #e8ebdd 0, transparent 42%), radial-gradient(ellipse at 100% 35%, #e9dfc7 0, transparent 42%),
+    repeating-linear-gradient(45deg, rgba(100, 86, 50, 0.025) 0 1px, transparent 1px 4px);
+}
+.container[role="main"] {
+  position: relative;
+  max-width: 1100px;
+  padding: 48px 52px 28px;
+  margin-top: 32px !important;
+  background:
+    radial-gradient(ellipse at 5% 0, rgba(230, 207, 139, 0.16), transparent 28%),
+    repeating-linear-gradient(0deg, rgba(106, 91, 58, 0.018) 0 1px, transparent 1px 4px), #fcf9ef;
+  border: 1px solid rgba(143, 126, 80, 0.17);
+  box-shadow: 0 16px 70px rgba(84, 77, 51, 0.065);
+}
+.homepage-site-header {
+  background: rgba(249, 247, 237, 0.96);
+}
+.homepage-nav-inner {
+  max-width: 1100px;
+  padding-inline: 28px;
+}
+.homepage-brand {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.5rem;
+}
+.homepage-navigation a {
+  font-size: 0.79rem;
+}
+.homepage-hero {
+  margin: 0 0 3.5rem;
+  gap: 2.8rem;
+}
+.homepage-visual {
+  align-self: center;
+}
+.homepage-portrait-wrap {
+  border: 1px solid #d7caa9;
+  box-shadow:
+    0 8px 24px rgba(92, 79, 45, 0.1),
+    0 0 0 5px rgba(255, 253, 245, 0.75);
+}
+.homepage-botanical {
+  width: 205px;
+  margin: 1rem auto -0.5rem;
+  opacity: 1;
+}
+.homepage-name {
+  color: #4b4b35;
+  margin-bottom: 0.55rem;
+}
+.homepage-eyebrow::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 4px;
+  margin: 0 0.6rem 2px 0;
+  background: #c4a253;
+  border-radius: 50% 25% 65% 20%;
+  transform: rotate(-3deg);
+}
+.homepage-role {
+  font-weight: 500;
+  font-size: 0.86rem;
+  line-height: 1.7;
+}
+.homepage-bio {
+  max-width: 60ch;
+  color: #615e50;
+}
+.homepage-phd-note {
+  padding: 0.65rem 0.8rem;
+  border-left: 3px solid #bda261;
+  background: rgba(226, 215, 176, 0.18);
+  font-size: 0.83rem;
+  gap: 0.4rem;
+}
+.homepage-phd-note span {
+  border: 0;
+  padding: 0 0.4rem 0 0;
+  color: #7d6530;
+}
+.homepage-profile-links {
+  margin-block: 0.9rem 0.2rem;
+}
+.homepage-contact-grid {
+  font-size: 0.81rem;
+  gap: 1rem;
+}
+.homepage-contact-item {
+  gap: 0.3rem;
+}
+.homepage-contact-label {
+  font-size: 0.62rem;
+  letter-spacing: 0.12em;
+}
+.homepage-email-row {
+  font-size: 0.8rem;
+}
+.homepage-section {
+  margin-bottom: 3.2rem;
+  position: relative;
+}
+.homepage-section > h2 {
+  position: relative;
+  padding-bottom: 0.85rem;
+  margin-bottom: 1.15rem;
+  color: #4c5743;
+  border-bottom: 1px solid var(--folio-line);
+  font-size: 2.05rem;
+}
+.homepage-section > h2::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 65px;
+  height: 4px;
+  border-radius: 70% 30% 60% 35%;
+  background: linear-gradient(90deg, #ad8b45, #d5bd7c 70%, transparent);
+  transform: rotate(-1deg);
+}
+.homepage-entry {
+  grid-template-columns: 112px minmax(0, 1fr);
+  gap: 1.25rem;
+  padding: 1.5rem 0;
+}
+.homepage-entry:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+.homepage-entry-date {
+  padding-top: 1.65rem;
+  font-size: 0.79rem;
+}
+.homepage-entry-title-row {
+  display: grid;
+  grid-template-columns: 112px minmax(0, 1fr);
+  gap: 1rem;
+  min-height: 80px;
+}
+.homepage-institution-mark {
+  width: 112px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.homepage-institution-logo {
+  width: 72px;
+  height: 72px;
+  flex: none;
+}
+.homepage-institution-mark--mbzuai .homepage-institution-logo {
+  width: 72px;
+  height: 72px;
+}
+.homepage-entry-body h3 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.6rem;
+  color: #4c5743;
+}
+.homepage-entry-kind {
+  margin-bottom: 0.5rem !important;
+}
+.homepage-experience-details {
+  padding-left: 128px;
+  margin-top: 0.65rem;
+}
+.homepage-experience-details > div {
+  grid-template-columns: 78px minmax(0, 1fr);
+  font-size: 0.83rem;
+}
+.homepage-experience-details dt {
+  color: #7c704f;
+}
+.homepage-painted-divider {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  margin: -1.4rem 0 2.5rem;
+  pointer-events: none;
+}
+.homepage-painted-divider img {
+  width: 210px;
+  height: auto;
+  opacity: 0.92;
+}
+.homepage-painted-divider span {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #d7ccac);
+}
+.homepage-painted-divider span:last-child {
+  transform: rotate(180deg);
+}
+.homepage-interest-grid {
+  gap: 0;
+  background: rgba(225, 232, 215, 0.2);
+  border: 1px solid #e1e3d3;
+  border-radius: 3px;
+}
+.homepage-interest {
+  padding: 1.35rem 1.4rem 1.35rem 3.6rem;
+  border: 0;
+}
+.homepage-interest:nth-child(odd) {
+  border-right: 1px solid #e1e3d3;
+}
+.homepage-interest:nth-child(-n + 2) {
+  border-bottom: 1px solid #e1e3d3;
+}
+.homepage-interest-number {
+  top: 1.2rem;
+  left: 1.15rem;
+  font-size: 1.35rem;
+  font-style: italic;
+  color: #9b9e77;
+}
+.homepage-interest h3 {
+  color: #49675b;
+  font-size: 0.94rem;
+  line-height: 1.5;
+}
+.homepage-interest p {
+  font-size: 0.82rem;
+  line-height: 1.75;
+}
+.homepage-publication {
+  padding: 1.5rem 0 1.5rem 1.25rem;
+  border-left: 2px solid #d9dfd0;
+  margin-top: 0.75rem;
+}
+.homepage-publication h3 {
+  font-size: 1.5rem;
+  line-height: 1.32;
+}
+.homepage-publication h3 a {
+  color: #41685e;
+}
+.homepage-publication-authors {
+  font-size: 0.84rem;
+  line-height: 1.8;
+}
+.homepage-publication-venue {
+  font-size: 0.81rem;
+}
+.homepage-oral {
+  border-radius: 3px;
+  letter-spacing: 0.08em;
+  font-size: 0.64rem;
+}
+.homepage-paper-links {
+  font-size: 0.77rem;
+}
+.homepage-service {
+  grid-template-columns: 112px minmax(0, 1fr);
+  gap: 1.25rem;
+  border-bottom: 0;
+  padding: 0.6rem 0;
+}
+.homepage-service-body p {
+  font-size: 0.87rem;
+}
+.homepage-service-body h3 {
+  color: #4c5743;
+  font-size: 1.5rem;
+}
+.homepage-section#honors {
+  padding-bottom: 0;
+  margin-bottom: 1.5rem;
+}
+.honors-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+.honor-card {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1.2rem;
+  padding: 1.3rem;
+  border: 1px solid #e0d8be;
+  border-radius: 4px;
+  background: rgba(255, 253, 245, 0.75);
+  box-shadow: 0 3px 0 rgba(169, 145, 89, 0.05);
+}
+.honor-mark,
+.honor-card:nth-child(2) .honor-mark,
+.honor-card:nth-child(3) .honor-mark {
+  width: 100%;
+  height: 84px;
+  border-radius: 3px;
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.honor-mark--comap {
+  background: #f4efdf;
+}
+.honor-card:nth-child(2) .honor-mark,
+.honor-card:nth-child(3) .honor-mark {
+  background: #465c53;
+}
+.honor-mark img {
+  display: block;
+  padding: 0;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 56px;
+  object-fit: contain;
+}
+.honor-mark--comap img {
+  width: 100px;
+  max-height: 65px;
+}
+.honor-mark--apmcm img {
+  width: 122px;
+}
+.honor-mark--mathorcup img {
+  width: 158px;
+}
+.honor-copy {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+.honor-year {
+  font-size: 0.66rem;
+  color: #8c7848;
+  margin-bottom: 0.45rem;
+  letter-spacing: 0.14em;
+}
+.honor-copy h3 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.27rem;
+  line-height: 1.3;
+  min-height: 5.1em;
+  color: #4c5743;
+}
+.honor-award {
+  font-size: 0.85rem;
+  color: #816526;
+  margin: 0.7rem 0 0.3rem;
+}
+.honor-meta {
+  font-size: 0.77rem;
+  line-height: 1.7;
+}
+.honor-copy > a {
+  margin-top: auto;
+  padding-top: 0.9rem;
+  font-size: 0.73rem;
+  color: #49675b;
+}
+.homepage-closing-art {
+  display: flex;
+  justify-content: center;
+  padding: 1.2rem 0 1.5rem;
+  pointer-events: none;
+}
+.homepage-closing-art img {
+  width: 350px;
+  max-width: 80%;
+  height: auto;
+}
+.homepage-closing {
+  font-size: 0.79rem;
+  border-top: 1px solid var(--folio-line);
+  color: #6f6a58;
+}
+footer.sticky-bottom {
+  margin-top: 1.5rem !important;
+  background: transparent;
+  color: #77715d;
+  font-size: 0.68rem;
+}
+@media (min-width: 1400px) {
+  .container[role="main"]::before {
+    content: "";
+    position: absolute;
+    width: 190px;
+    height: 130px;
+    top: 54%;
+    left: -145px;
+    background: url("../img/oil-daisy-garland.webp") center / contain no-repeat;
+    transform: rotate(-65deg);
+    opacity: 0.65;
+    pointer-events: none;
+  }
+}
+@media (max-width: 1000px) {
+  .container[role="main"] {
+    padding: 32px;
+  }
+  .homepage-hero {
+    gap: 2rem;
+    grid-template-columns: 190px minmax(0, 1fr);
+  }
+  .homepage-portrait-wrap {
+    width: 190px;
+  }
+  .homepage-botanical {
+    width: 180px;
+  }
+  .homepage-experience-details {
+    padding-left: 0;
+  }
+  .honor-card {
+    padding: 1.05rem;
+  }
+}
+@media (max-width: 767px) {
+  body.fixed-top-nav {
+    padding-top: 100px;
+  }
+  .container[role="main"] {
+    margin-top: 10px !important;
+    width: calc(100% - 24px);
+    padding: 26px 20px 20px;
+  }
+  .homepage-nav-inner {
+    padding-inline: 20px;
+    min-height: 0;
+  }
+  .homepage-navigation a {
+    padding-block: 0.45rem;
+  }
+  .homepage-hero {
+    grid-template-columns: 1fr;
+    gap: 1.7rem;
+    margin-bottom: 2.5rem;
+  }
+  .homepage-portrait-wrap {
+    width: 145px;
+    flex-basis: 145px;
+  }
+  .homepage-botanical {
+    width: 116px;
+    margin: 0;
+  }
+  .homepage-visual {
+    gap: 1.2rem;
+  }
+  .homepage-name {
+    font-size: 3rem;
+  }
+  .homepage-bio {
+    font-size: 0.88rem;
+  }
+  .homepage-section {
+    margin-bottom: 2.6rem;
+    scroll-margin-top: 145px;
+  }
+  .homepage-section > h2 {
+    font-size: 1.75rem;
+  }
+  .homepage-entry,
+  .homepage-service {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+  .homepage-entry-date {
+    padding: 0;
+  }
+  .homepage-entry-title-row {
+    grid-template-columns: 86px minmax(0, 1fr);
+    gap: 0.8rem;
+  }
+  .homepage-institution-mark {
+    width: 86px;
+    height: 72px;
+  }
+  .homepage-institution-logo {
+    width: 58px;
+    height: 58px;
+  }
+  .homepage-institution-mark--mbzuai .homepage-institution-logo {
+    width: 58px;
+    height: 58px;
+  }
+  .homepage-entry-body h3 {
+    font-size: 1.35rem;
+  }
+  .homepage-entry-body .homepage-entry-role {
+    font-size: 0.78rem;
+  }
+  .homepage-experience-details > div {
+    grid-template-columns: 72px minmax(0, 1fr);
+    font-size: 0.8rem;
+  }
+  .homepage-painted-divider {
+    margin: -0.6rem 0 1.6rem;
+    gap: 0.8rem;
+  }
+  .homepage-painted-divider img {
+    width: 155px;
+  }
+  .homepage-interest-grid {
+    grid-template-columns: 1fr;
+  }
+  .homepage-interest {
+    padding: 1.1rem 1rem 1.1rem 3.1rem;
+  }
+  .homepage-interest:nth-child(odd) {
+    border-right: 0;
+  }
+  .homepage-interest:not(:last-child) {
+    border-bottom: 1px solid #e1e3d3;
+  }
+  .homepage-interest-number {
+    top: 1rem;
+    left: 0.9rem;
+  }
+  .homepage-publication {
+    padding-left: 0.9rem;
+  }
+  .homepage-publication h3 {
+    font-size: 1.35rem;
+  }
+  .honors-grid {
+    grid-template-columns: 1fr;
+  }
+  .honor-card {
+    display: grid;
+    grid-template-columns: 100px minmax(0, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .honor-mark,
+  .honor-card:nth-child(2) .honor-mark,
+  .honor-card:nth-child(3) .honor-mark {
+    height: 68px;
+    padding: 8px;
+  }
+  .honor-copy h3 {
+    min-height: 0;
+    font-size: 1.15rem;
+  }
+  .honor-award {
+    font-size: 0.8rem;
+  }
+  .homepage-closing {
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media (max-width: 380px) {
+  .container[role="main"] {
+    padding-inline: 16px;
+  }
+  .homepage-visual {
+    gap: 0.8rem;
+  }
+  .homepage-botanical {
+    width: 96px;
+  }
+  .homepage-name {
+    font-size: 2.65rem;
+  }
+  .homepage-profile-links {
+    gap: 0.75rem;
+    font-size: 0.77rem;
+  }
+  .honor-card {
+    grid-template-columns: 1fr;
+  }
+  .honor-mark,
+  .honor-card:nth-child(2) .honor-mark,
+  .honor-card:nth-child(3) .honor-mark {
+    width: 150px;
+  }
+}
